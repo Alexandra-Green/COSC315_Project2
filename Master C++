@@ -23,17 +23,8 @@ std:: string GetTime(){
 			return std::ctime(&currentTime);
 
 }
-/*Test.. First displays the current full time
- * the other displays the time in hours, minutes and seconds*/
 int main()
 {
-	auto timeRn = std::chrono::system_clock::now();
-		std::time_t currentTime =
-				std::chrono::system_clock::to_time_t(timeRn);
-		std::cout << std::ctime(&currentTime) <<"\n";
-		tm localTime = *localtime(&currentTime);
-		std::cout << localTime.tm_hour << ":";
-		std::cout << localTime.tm_min << ":";
-		std::cout << localTime.tm_sec << "\n";
+	std::cout << GetTime() << "\n"; //prints result from GetTime method
 	return 0;
 }
