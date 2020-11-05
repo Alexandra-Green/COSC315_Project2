@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <vector>
+#include <ctime>
+#include <cmath>
+#include <numeric>
+#include <chrono>
+#include <thread>
+#include <limits>
+#include <sstream>
+
+/*Gets a random number that is less than the max number entered */
+int getRandom(int M){
+	srand(time(NULL));
+	return rand() % M;
+}
+/*Test.. First displays the current full time
+ * the other displays the time in hours, minutes and seconds*/
+int main()
+{
+	auto timeRn = std::chrono::system_clock::now();
+		std::time_t currentTime =
+				std::chrono::system_clock::to_time_t(timeRn);
+		std::cout << std::ctime(&currentTime) <<"\n";
+		tm localTime = *localtime(&currentTime);
+		std::cout << localTime.tm_hour << ":";
+		std::cout << localTime.tm_min << ":";
+		std::cout << localTime.tm_sec << "\n";
+	return 0;
+}
