@@ -15,6 +15,14 @@ int getRandom(int M){
 	srand(time(NULL));
 	return rand() % M;
 }
+/*Displays the current date and time when called*/
+std:: string GetTime(){
+	auto timeRn = std::chrono::system_clock::now();
+			std::time_t currentTime =
+					std::chrono::system_clock::to_time_t(timeRn);
+			return std::ctime(&currentTime);
+
+}
 /*Test.. First displays the current full time
  * the other displays the time in hours, minutes and seconds*/
 int main()
