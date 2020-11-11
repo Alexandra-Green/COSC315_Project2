@@ -17,7 +17,7 @@ Talon:
   To compile the C++ code on Linux, open the terminal. Then change directory, "cd", to the Project2 folder. Once there, type "make", which will build the program and create the executable code file. It should be under the name C++Code and the terminal will print out the first component of the Makefile. To run the code enter "./C++Code", then the file should run and ask you to enter the number of threads, then enter the number of requests to produce, then enter the max sleep duration of each request, and lastly, enter max queue size. In each case, the program expects and accepts only numbers inputs. The program then prints out the completion of each process. 
 
 ### Sample Output for C++: 
-![2020-11-10 (2)](https://user-images.githubusercontent.com/60950452/98749810-4b81b380-2371-11eb-8a93-d62390eb5362.png)
+![2020-11-11](https://user-images.githubusercontent.com/60950452/98864870-63b00c00-241f-11eb-92ee-03ab0d2f93d6.png)
 
 ### Experience using C++ vs Java:
 
