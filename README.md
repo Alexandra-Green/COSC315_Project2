@@ -20,8 +20,10 @@ Talon:
 ![2020-11-11](https://user-images.githubusercontent.com/60950452/98864870-63b00c00-241f-11eb-92ee-03ab0d2f93d6.png)
 
 ### Experience using C++ vs Java:
-
-
+  We didn't find too much of a varariance in the difficulty of this project between languages. Both parts of this project were challenging in their own way and took us awhile to figure out and implement in a way that worked. Neither side was easier and they both took roughly the same amount of time to complete.
+  
 ### Java Implementation Details:
+  For the java implementation, the thread class is used to create both the producer and consumer threads. User input is used for the max producer sleep time, consumer threads available, and max duration of a request. The producer thread creates a task that the first available consuemr thread will respond to and begin working on. Between each task creation the producer thread will sleep for a random amount of time less than the max specified by the user. Each consumer thread will only work on a task as long as there isn't already a thread tasked to it. After a consumer thread has finished the task, it is put back into the queue of available threads to be tasked to the next available task. 
+
 ### Build Instructions for Java:
 ### Sample Output for Java
