@@ -6,7 +6,7 @@ This project is to implement a multithreaded request scheduler, similiar to Micr
 Alex:
 Jordan:
 Mark:
-Talon: 
+Talon: Created starting base code for the Java portion and the java portion of the readme file
 
 ### C++ Implementation details: 
 
