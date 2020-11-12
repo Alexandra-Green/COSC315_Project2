@@ -1,4 +1,4 @@
-import java.time.LocalTime;
+import java.time.LocalTime; 
 import java.util.*;
 public class Producer extends Thread{
 	
@@ -25,7 +25,6 @@ public class Producer extends Thread{
 	
 	public void run() {
 		while(true) {
-			
 			//Keep producing until queue is full
 			while(queue.size()<maxSize) {
 				LocalTime t = LocalTime.now();
@@ -38,10 +37,10 @@ public class Producer extends Thread{
 					Thread.sleep(rest);
 				}
 				catch (InterruptedException e) {
-					System.out.println("Producer woke up early");
+					return;
 				}
 				}
-			
+		
 			//After Producer produces as much as possible it must wait
 			synchronized(queue) {
 			while(queue.size()==maxSize) {
@@ -50,6 +49,7 @@ public class Producer extends Thread{
 					queue.wait();
 				} 
 				catch (InterruptedException e) {
+					return;
 				}
 			}
 			//Make sure consumers are working as much as possible
@@ -59,9 +59,7 @@ public class Producer extends Thread{
 				queue.notifyAll();
 			}
 			
-			
-			}
 		}
 	
-	
+	}	
 }

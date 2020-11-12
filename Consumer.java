@@ -18,7 +18,6 @@ public void run() {
 	while(true) {
 		Buffer request = new Buffer();
 		request = null;
-		
 		//Leave lock as soon as possible with request data so others consumers can work
 		if(queue.size()>0) 
 			synchronized(queue) {
@@ -46,10 +45,9 @@ public void run() {
 			queue.notifyAll(); //Make sure producer wakes up
 			queue.wait();
 		} catch (InterruptedException e) {
+			return;
 		}
 	}
-	
-		
 	}
 	
 }
