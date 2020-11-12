@@ -3,9 +3,9 @@
 This project is to implement a multithreaded request scheduler, similiar to Microsoft Apache. It will be implemented in both C++ and Java. Done by Alex Green, Jordan Bao, Mark Behnke and Talon Pratt.
 
 ### Contributions:
-Alex:
-Jordan:
-Mark:
+Alex:  
+Jordan:  
+Mark:  
 Talon: Created starting base code for the Java portion and the java portion of the readme file
 
 ### C++ Implementation details: 
