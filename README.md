@@ -5,7 +5,7 @@ This project is to implement a multithreaded request scheduler, similiar to Micr
 ### Contributions:
 Alex: Created the Makefiles, set up and contributed to the readme, implemented the time method and user inputs and contributed with other areas of the C++ code.
 
-Jordan: Implemented threads and synchronization for the Java portion by creating a Producer, Consumer, Buffer and main class
+Jordan: Implemented threads and synchronization for the Java portion by creating a Producer, Consumer, Buffer and main Request classes.
 
 Mark: Wrote the thread synchronization methods (producer and consumer) using mutex’s to allow for continual read and writing to one resource between N threads. 
 
