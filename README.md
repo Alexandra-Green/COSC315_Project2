@@ -5,6 +5,7 @@ This project is to implement a multithreaded request scheduler, similiar to Micr
 ### Contributions:
 Alex:  
 Jordan: Implemented threads and synchronization for the Java portion by creating a Producer, Consumer, Buffer and main class
+
 Mark:  
 Talon: Created starting base code for the Java portion and the java portion of the readme file
 
