@@ -27,3 +27,4 @@ Talon:
 
 ### Build Instructions for Java:
 ### Sample Output for Java
+![Sample Java output 2020-11-11](https://i.imgur.com/9GVOFeF.png)
